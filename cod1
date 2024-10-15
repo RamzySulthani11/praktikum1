@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Form Pendaftaran</h1>
+
+        <!-- Formulir dimulai di sini -->
+        <form>
+            <!-- Input Nama -->
+            <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda">
+            </div>
+
+            <!-- Input Email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda">
+            </div>
+
+            <!-- Input Password -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Masukkan password">
+            </div>
+
+            <!-- Pilihan Jenis Kelamin -->
+            <div class="mb-3">
+                <label class="form-label">Jenis Kelamin</label>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                        <label class="form-check-label" for="male">Laki-laki</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="female">Perempuan</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pilihan Negara -->
+            <div class="mb-3">
+                <label for="country" class="form-label">Negara</label>
+                <select class="form-select" id="country">
+                    <option value="ID">Indonesia</option>
+                    <option value="MY">Malaysia</option>
+                    <option value="SG">Singapura</option>
+                    <option value="TH">Thailand</option>
+                </select>
+            </div>
+
+            <!-- Checkbox Persetujuan -->
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="agreement">
+                <label class="form-check-label" for="agreement">Saya setuju dengan syarat dan ketentuan</label>
+            </div>
+
+            <!-- Tombol Submit -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <!-- Formulir berakhir di sini -->
+
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
